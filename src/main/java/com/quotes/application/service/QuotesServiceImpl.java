@@ -35,7 +35,5 @@ public class QuotesServiceImpl implements QuotesService {
                 .retrieve()
                 .bodyToMono(Object.class)
                 .block();
-
-
     }
 }

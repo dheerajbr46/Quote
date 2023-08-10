@@ -4,5 +4,4 @@ import com.quotes.application.model.Quote;
 
 public interface QuotesService {
     Quote getQuote() throws Exception;
-
 }
