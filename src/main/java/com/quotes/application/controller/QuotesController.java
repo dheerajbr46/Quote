@@ -16,7 +16,6 @@ public class QuotesController {
 
     @GetMapping
     public Quote getQuote() throws Exception {
-
         return quotesService.getQuote();
     }
 
