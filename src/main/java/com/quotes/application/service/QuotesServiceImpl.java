@@ -3,21 +3,18 @@ package com.quotes.application.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.quotes.application.model.Quote;
-import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
 
-@Configurable
 @Service
 public class QuotesServiceImpl implements QuotesService {
 
     private final ObjectMapper mapper = new ObjectMapper();
     private final Gson gson = new Gson();
 
-    //@Autowired
     private final WebClient webClient = WebClient.create();
 
     @Override
